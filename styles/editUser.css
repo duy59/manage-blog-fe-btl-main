@@ -1,0 +1,54 @@
+.form-edit-user {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-edit-user form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-edit-user label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-edit-user input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+.form-edit-user select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-edit-user button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-edit-user button:hover {
+    background-color: #0056b3;
+}
+
+.form-edit-user p {
+    margin-top: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,30 @@
+.datatables .mantine-DataTable-cell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.action-buttons button {
+    margin-right: 8px; /* Adjust the spacing as needed */
+}
+
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; /* Ensure it behaves as a block element */
+    width: 100%; /* Ensure it takes the full width of the container */
+}
+
+.text-author {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; /* Ensure it behaves as a block element */
+    width: 100%; 
+}
+
+.search-input::placeholder {
+    font-weight: bold;
+}

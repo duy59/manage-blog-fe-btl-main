@@ -1,0 +1,10 @@
+/* alertStyle.css */
+.toast-success {
+    background-color: #d4edda !important; /* Light green */
+    color: #155724 !important; /* Dark green text */
+}
+
+.toast-error {
+    background-color: #f8d7da !important; /* Light red */
+    color: #721c24 !important; /* Dark red text */
+}
