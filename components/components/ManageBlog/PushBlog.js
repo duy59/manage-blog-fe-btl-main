@@ -63,34 +63,6 @@ const PushBlog = ({ blogId }) => {
     }, [blogId]);
 
 
-    const tokenWeb = "idGhlbSIsInN1YSIsInhvYSJdLCJpYXQiOjE3Mjg4MDIyODg" ;
-    
-    function fetchCategory() {
-        fetch(`https://xemnha.vn/api/categories`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `${tokenWeb}`
-            }
-        })
-            .then(response => {
-                if(!response.ok) {
-                    throw new Error('Failed to fetch category');
-                }
-                return response.json();
-            })
-            .then(data => {
-                setDataCategory(data.data);
-            }
-            )
-            .catch(error => console.error('Error fetching category:', error));
-
-    }
-
-    useEffect(() => {
-        fetchCategory();
-    }, []);
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         if(idCategory === ''){
@@ -101,7 +73,6 @@ const PushBlog = ({ blogId }) => {
             return;
         }
         try {
-            const WebToken = "idGhlbSIsInN1YSIsInhvYSJdLCJpYXQiOjE3Mjg4MDIyODg";
             const body = {
                 name: title,
                 slug: slug,
@@ -115,7 +86,7 @@ const PushBlog = ({ blogId }) => {
             console.log("du lieu gui di " ,   content);
             console.log(body);
             // Gửi yêu cầu POST để chèn bài viết mới
-            const response = await fetch(`https://xemnha.vn/api/insertPost`, {
+            const response = await fetch(``, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
